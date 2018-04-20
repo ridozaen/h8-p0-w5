@@ -1,5 +1,5 @@
 function cariPelaku(str) {
-    return str.match(/abc/g).length;
+    return (str)? str.match(/abc/g).length : '';
   }
   
   // TEST CASES
@@ -8,4 +8,5 @@ function cariPelaku(str) {
   console.log(cariPelaku('bcabcac')); // 1
   console.log(cariPelaku('abcabcabc')); // 3
   console.log(cariPelaku('babcbacabc')); // 2
+  console.log(cariPelaku(''));
   
